@@ -1,0 +1,14 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: test-gke-nightly-cluster-ubuntu-latest-wego-wego-test-app-72khhde7
+  namespace: wego-system
+spec:
+  interval: 30s
+  ref:
+    branch: main
+  secretRef:
+    name: test-gke-nightly-cluster-ubuntu-latest-wego-wego-test-app-72khhde7
+  url: ssh://git@github.com/wkp-example-org/wego-test-app-72khhde7.git
+

@@ -1,0 +1,7 @@
+apiVersion: wego.weave.works/v1alpha1
+kind: Application
+metadata:
+  name: test-gke-nightly-cluster-ubuntu-latest-wego-wego-test-app-72khhde7
+spec:
+  path: ./
+  url: ssh://git@github.com/wkp-example-org/wego-test-app-72khhde7.git
